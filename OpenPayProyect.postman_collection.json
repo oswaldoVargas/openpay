@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "2b08cbea-8c99-481b-8bf7-9fb001b5aa7f",
+		"name": "OpenPayProyect",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "altaUsuario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "es-Es",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\n\"nombre\":\"juan Oswaldo\",\n\"apellidoPaterno\":\"Vargas\",\n\"apellidoMaterno\":\"Nuñez\",\n\"edad\":18,\n\"celular\":\"+(123) - 456-78-91\",\n\"direccion\":\"aqui\",\n\"producto\":\"LIBRETON\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cuentas/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Usuario",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "es-Es"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/cuentas/usuarios_51",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas",
+						"usuarios_51"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Usuario modifica",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "es-Es"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\"id\":51,\n\"nombre\":\"Jose Antionio\",\n\"apellidoPaterno\":\"Vargas\",\n\"apellidoMaterno\":\"Nuñez\",\n\"edad\":18,\n\"celular\":\"+(123) - 456-78-91\",\n\"direccion\":\"aqui\",\n\"producto\":\"LIBRETON\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cuentas/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alta cuenta Usuario",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "es-Es"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\n\"id\":51,\n\"producto\":\"Tarjeta DORADA\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cuentas/usuarios_cuentas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas",
+						"usuarios_cuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Elimina Usuario",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-En",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/cuentas/usuarios_58",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas",
+						"usuarios_58"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
